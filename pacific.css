@@ -1,40 +1,247 @@
+header,
+main,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+    display: block;
+}
 
-h2 { color: #3399CC; }
-h3 { color: #000033; }
-.resort {color: #5C7FA3; }
+body {
+    background-color: #FFFFFF;
+    color: #666666;
+    background-image: url(images/ptrbackground.jpg);
+    font-family: Ariel, "Helvetica Neue", Helvetica, sans-serif;
+}
 
-body { background-color: #666666;
-        font-family: Ariel,"Helvetica Neue",Helvetica,sans-serif;}
+#wrapper {
+    background-color: #90C7E3;
+    text-decoration: none;
+    width: 80%;
+    min-width: 960px;
+    margin: auto;
+    box-shadow: 5px 5px 5px #000033;
+}
 
-#wrapper {background-color: #FFFFFF;
-          margin-left: auto;
-          margin-right: auto;
-          width: 80%;
-          min-width: 960px;
-          box-shadow: 5px 5px 5px #000033; }
+nav {
+    background-color: #90C7E3;
+    font-weight: bold;
+    padding: 15px;
+    float: left;
+    width: 160px;
+}
 
+nav a {
+    text-decoration: none
+}
+
+nav a:link {
+    color: #000033;
+}
+
+nav a:visited {
+    color: #EAEAEA;
+}
+
+nav a:hover {
+    color: #000066;
+}
+
+main {
+    background-color: #FFFFFF;
+    padding: 1px 20px;
+    margin-left: 190px;
+}
 header {background-color: #000033;
         background-image: url(images/sunset.jpg);
         background-position: right;
-        background-repeat: no-repeat;
-        color: #FFFFFF;
-        font-family: Georgia,Times,"Times New Roman",serif;
-        margin-bottom: 0;
-        text-align: center; }
-
-h1 {padding: 10px;margin:auto}
-main {padding: 1px 20px 20px; }
-
-nav {background-color: #90C7E3;
-    font-weight: bold;text-align: center }
-nav a {text-decoration: none
+    background-repeat: no-repeat;}
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+    font-family: Georgia, Times, "Times New Roman", serif;
 }
-ul {list-style-image: url(images/marker.gif); }
-#contact { font-size: 90%; }
 
-footer {font-family: Georgia,Times,"Times New Roman",serif;
-        font-size: 75%;
-        font-style: italic;
+h2 {
+    color: #3399CC;
+    text-shadow: 1px1px1px #666666;
+    font-family: Georgia, Times, "Times New Roman"serif
+}
+
+h3 {
+    color: #666666;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+main ul {
+    list-style-image: url(images/marker.gif);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#placeholder {
+    position: absolute;
+    top: 15px;
+    left: 320px;
+    opacity: .25;
+}
+
+.homehero {
+    background-image: url(images/coasthero.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 100% 100%;
+    margin-left: 190px;
+}
+
+.yurthero {
+    background-image: url(images/yurthero.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 100% 100%;
+    margin-left: 190px;
+}
+
+.trailhero {
+    background-image: url(images/trailhero.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 100% 100%;
+    margin-left: 190px;
+}
+
+.resort {
+    font-weight: bold;
+    color: #5C7FA3;
+}
+
+#contact {
+    color: #666666;
+    font-size: 90%;
+}
+
+footer {
+    background-color: #FFFFFF;
+    font-size:75%;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    clear: left;
+    margin-left: 190px;
+    font-family: Georgia, Times, "Times New Roman", serif
+}
+
+#gallery {
+    position: relative;
+    height: 200px;
+    float: none;
+    padding: 0;
+}
+
+#gallery ul {
+    width: 250px;
+    list-style-type:
+}
+
+#gallery li {
+    display: inline;
+    float: none;
+    padding: 0px;
+}
+
+#gallery img {
+    border-style: none;
+}
+
+#gallery a {
+    text-decoration: none;
+    color: #333;
+    font-style: italic;
+}
+
+#gallery span {
+    display: none;
+    float: left;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 320px;
+    opacity: .25;
+}
+
+#gallery a:hover span {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 320px;
+    text-align: center;
+}
+
+.mobile {
+    display: none
+}
+
+@media only screen and (max-width:768px) {
+    nav {
+        float: none;
+    }
+    body {
+        margin: 0px;
+    }
+    #wrapper {
+        min-width: 0px;
+        box-shadow: none;
+    }
+    h1 {
+        margin-top: 0px;
+    }
+    nav {
+        width: auto;
+        padding: .5em;
         text-align: center;
-    padding: 20px; }
-       
+    }
+    nav li {
+        display: inline;
+        padding: 0px .75px 0px .75px;
+    }
+    main {
+        margin-left: 0px
+    }
+    .homehero {
+        margin-left: 0px
+    }
+    .yurthero {
+        margin-left: 0px
+    }
+    .trailhero {
+        margin-left: 0px
+    }
+}
+
+@media only screen and(max-width:550px){#gallery{display: none;} }
+
+@media only screen and(max-width:480px){
+    h1{font-size: 1.5em;}
+    main {padding: 0.1em 1em 0.1em;margin: 0;font-size: 90%;}
+    
+    .homehero{background-image: none;height: 0px;}
+    .yurthero{background-image: none;height: 0px;}
+    .trailhero{background-image: none;height: 0px;}
+    
+    nav ul{text-align: center;padding: 0;margin: 0;}
+    nav li{display: inherit;margin: 0;padding: 0.3em;border-bottom: 2px solid #330000;}
+    nav a {display: block;}
+    .mobile {float: none;padding: 0;margin: 0.1em;}
+    main ul{list-style-position: outside;}
+    .desktop {display: none;}
+    .mobile{ display: block;}
+}
