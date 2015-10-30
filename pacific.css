@@ -17,6 +17,17 @@ body {
     font-family: Ariel, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+form {background-color: #EAEAEA;font-family: Arial,sans-serif;width: 350px;padding: 10px;}
+label {float: left; clear: left; display: block; width: 100px; padding-right:10px; margin-top: 20px;text-align: right;}
+input {display: block;margin-bottom: 20px;}
+textarea {display: block;margin-top: 10px;}
+input [type="submit"] {margin-left: 110px; }
+
+video,embed { float:right;padding-left: 20px; }
+table {border: 1px med #3399cc; width: 80%;border-spacing: 0;text-align: center;cellspacing:0}
+td,th {padding: 5px;border: 1px med #3399cc;text-align: center;font-family: Ariel, sans-serif;t}
+
+
 #wrapper {
     background-color: #90C7E3;
     text-decoration: none;
