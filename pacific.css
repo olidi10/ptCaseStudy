@@ -17,15 +17,14 @@ body {
     font-family: Ariel, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-form {background-color: #EAEAEA;font-family: Arial,sans-serif;width: 350px;padding: 10px;}
-label {float: left; clear: left; display: block; width: 100px; padding-right:10px; margin-top: 20px;text-align: right;}
+label {float: left; display: block; width: 120px; padding-right:20px; text-align: right;}
 input {display: block;margin-bottom: 20px;}
-textarea {display: block;margin-top: 10px;}
-input [type="submit"] {margin-left: 110px; }
+textarea {display: block;margin-bottom: 20px;}
+input[type="submit"] {margin-left: 140px; }
 
-video,embed { float:right;padding-left: 20px; }
-table {border: 1px med #3399cc; width: 80%;border-spacing: 0;text-align: center;cellspacing:0}
-td,th {padding: 5px;border: 1px med #3399cc;text-align: center;font-family: Ariel, sans-serif;t}
+video { float: right; }
+table {border: 1px solid #3399cc; width: 80%;border-spacing: 0;text-align: center;cellspacing:0}
+th {padding: 5px;border: 1px solid #3399cc;text-align: center;font-family: Ariel, sans-serif;t}
 
 
 #wrapper {
@@ -85,7 +84,7 @@ h2 {
 }
 
 h3 {
-    color: #666666;
+    color: #000033;
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 
@@ -236,6 +235,7 @@ footer {
     .trailhero {
         margin-left: 0px
     }
+    video { float: none; }
 }
 
 @media only screen and(max-width:550px){#gallery{display: none;} }
@@ -255,4 +255,5 @@ footer {
     main ul{list-style-position: outside;}
     .desktop {display: none;}
     .mobile{ display: block;}
+    video { display: none; }
 }
